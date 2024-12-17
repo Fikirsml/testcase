@@ -1,20 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-// Define a type for userInfo
+
 interface UserInfo {
   phone: string;
   password: string;
 }
 
 const Login = () => {
-  // Specify the type for useState
+
   const [userInfo, setUserInfo] = useState<UserInfo>({
     phone: '',
     password: '',
   });
 
-  // Define the event type for the handleUserChange function
+
   const handleUserChange = (
     e: React.ChangeEvent<HTMLInputElement>
   ): void => {
